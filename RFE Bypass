@@ -1,0 +1,14 @@
+local SS = game:GetService("SoundService")
+
+local function active()
+  print("Attempted to set RFE to false")
+print("Current RFE Status: " .. tostring(SoundService.RespectFilteringEnabled))
+end
+
+while true do
+SS.RespectFilteringEnabled = false
+end
+
+while true do wait(1)
+active()
+end
